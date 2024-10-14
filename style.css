@@ -1,0 +1,90 @@
+.radio-section {
+    margin-bottom: 15px;
+}
+
+#weather-list {
+    margin-bottom: 30px;
+}
+
+#app {
+    display: flex;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #app {
+        flex-direction: column;
+    }
+}
+
+.input-label {
+    margin-bottom: 15px;
+}
+
+.weather-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 80px
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 400px;
+    padding: 40px;
+    margin-right: 40px;
+}
+
+input {
+    margin-right: 20px !important;
+    margin-bottom: 15px !important;
+}
+
+.paragraph {
+    margin-bottom: 20px;
+}
+
+.current-page {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.records-count {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.pagin-buttons-div {
+    display: flex;
+}
+
+#current-page-1-container {
+    margin-right: 10px;
+}
+
+#search-input-city,
+#search-input-zip,
+#search-input-coord {
+    display: none;
+}
+
+.app-title {
+    padding-bottom: 40px;
+}
+
+.pagination-buttons-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#city-search,
+#zip-search,
+#coord-search {
+    display: none;
+}
+
+#prev-page {
+    margin-right: 10px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="input-section">
+        <h3 class="title is-3 app-title">Weather Forecasts</h3>
+        <div class="radio-section">
+          <p class="title is-5">How you want to search?</p>
+          <input type="radio" id="city" value="city" name="search-type" />
+          <label for="city">By City or Country name</label><br />
+          <input type="radio" id="zip" value="zip" name="search-type" />
+          <label for="zip">By Zip code and Country code</label><br />
+          <input type="radio" id="coord" value="coord" name="search-type" />
+          <label for="coord">By Coordinates</label><br />
+        </div>
+        <p class="input-label" id="city-search">
+          Search by City or Country name, like this - Kaunas or Germany:
+        </p>
+        <input
+          placeholder="Enter city or country name"
+          class="input is-primary"
+          id="search-input-city"
+          type="text"
+        />
+        <p class="input-label" id="zip-search">
+          Search by ZIP and Country code separated by comma, like this - 94040,
+          US or 50464, LT:
+        </p>
+        <input
+          placeholder="Enter ZIP code and country code"
+          class="input is-primary"
+          id="search-input-zip"
+          type="text"
+        />
+        <p class="input-label" id="coord-search">
+          Search by Coordinates separated by comma, like this - 54.90, 23.90 or
+          44.34, 10.99:
+        </p>
+        <input
+          placeholder="Enter latitude and longitude"
+          class="input is-primary"
+          id="search-input-coord"
+          type="text"
+        />
+        <button class="button is-primary" id="search-button">Search</button>
+      </div>
+      <div class="weather-wrapper">
+        <div id="weather-list"></div>
+        <div class="pagination-buttons-div">
+          <div class="current-page">
+            <h3>Current page:</h3>
+            <p id="current-page-1-container"></p>
+            <h3>Records:</h3>
+            <p id="records-1st-list-container"></p>
+          </div>
+          <div class="pagin-buttons-div">
+            <button id="prev-page" class="button is-primary">Prev Page</button>
+            <button id="next-page" class="button is-primary">Next Page</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
