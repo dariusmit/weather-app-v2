@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 import "./style.css";
 import swal from "sweetalert";

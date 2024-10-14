@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 import swal from "sweetalert";
 import { city, zip, lat, lon, country_code } from "./inputData.js";

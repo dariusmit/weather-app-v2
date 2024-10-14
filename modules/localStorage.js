@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 import { WeatherArray } from "./listFunctions.js";
 import { currentPage, paginatedArray } from "./pagination.js";
